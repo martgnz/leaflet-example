@@ -44,7 +44,7 @@
 
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 
-	<script type="text/javascript" src="/es-comunidades.js"></script>
+	<script type="text/javascript" src="es-comunidades.js"></script>
 	<script type="text/javascript">
 
 		var map = L.map('map').setView([40, -3], 6);
@@ -56,7 +56,6 @@
 				'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 			id: 'examples.map-20v6611k'
 		}).addTo(map);
-
 
 		// control that shows state info on hover
 		var info = L.control();
@@ -138,7 +137,7 @@
 		geojson = L.geoJson(comunidades, {
 			style: style,
 			onEachFeature: onEachFeature
-		}) .addTo(map);
+		}).addTo(map);
 
 		map.attributionControl.addAttribution('Dsatos electorales &copy; <a href="http://es.scribd.com/doc/231831913/Reparto-geografico-de-los-avales-conseguidos-por-los-candidatos">PSOE</a>');
 
